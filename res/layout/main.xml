@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray"
+                >
+    <!-- topbar -->
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="match_parent" 
+            android:layout_height="50dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:text="ADB OVER WIFI"
+            android:textSize="20sp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/blue_holo"
+            />
+    </LinearLayout>
+
+
+    <!-- main -->
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_below="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/toggleLayout"
+                android:layout_gravity="center"
+                android:layout_width="220dp"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                >
+                <TextView
+                    android:id="@+id/toggleLeft"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_dark"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="OFF"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    />
+                <TextView
+                    android:id="@+id/toggleRight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_light"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    />
+            </LinearLayout>
+            
+            <TextView
+                android:id="@+id/hint"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:text="adb connect 192.168.100.100:5555"
+                android:textColor="@color/gray_dark"
+                android:textSize="14sp"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- copyright -->
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\@author: zeyuec"
+        android:textColor="@color/gray_light"
+        android:textSize="10sp"
+        />
+</RelativeLayout>
+
