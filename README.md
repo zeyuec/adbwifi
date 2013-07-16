@@ -1,6 +1,6 @@
 # Adb Over Wifi
 
-This app (aka AoW) allows to establish ADB connections over wifi network.
+This app (aka AoW) allows to establish ADB connections over WiFi network.
 
 # Features
 
